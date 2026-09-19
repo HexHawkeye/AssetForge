@@ -1,0 +1,8 @@
+services:
+  assetforge:
+    build: .
+    ports: ["8080:8080"]
+    volumes: ["assetforge-data:/data"]
+    restart: unless-stopped
+volumes:
+  assetforge-data:

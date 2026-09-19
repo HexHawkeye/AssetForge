@@ -1,0 +1,1 @@
+.maintenance-form{display:grid;grid-template-columns:1fr 1.5fr 1fr auto;gap:12px;align-items:end}.maintenance-table{margin-top:24px}.complete-form{display:grid;grid-template-columns:1fr .6fr auto;gap:5px}.complete-form input{margin:0}@media(max-width:900px){.maintenance-form,.complete-form{grid-template-columns:1fr}}

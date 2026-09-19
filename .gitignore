@@ -1,0 +1,6 @@
+bin/
+obj/
+.vs/
+*.user
+AssetForge.Web/assetforge.db*
+.env

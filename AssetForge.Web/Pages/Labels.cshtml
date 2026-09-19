@@ -1,0 +1,3 @@
+@page
+@model LabelsModel
+@{ViewData["Title"]="Labels";}<header class="page-head no-print"><div><div class="eyebrow">PHYSICAL IDENTIFICATION</div><h1>Asset labels</h1><p>Print an A4 sheet or download individual QR codes.</p></div><button class="primary" onclick="window.print()">PRINT LABEL SHEET</button></header><section class="label-grid">@foreach(var a in Model.Assets){<article class="asset-label"><div><b>◆ ASSETFORGE</b><strong>@a.AssetTag</strong><span>@a.Name</span><small>@a.Category?.Name</small><a class="no-print" href="/Labels?handler=Qr&tag=@a.AssetTag&download=true">DOWNLOAD SVG</a></div><img src="/Labels?handler=Qr&tag=@a.AssetTag" alt="QR for @a.AssetTag"/></article>}</section>

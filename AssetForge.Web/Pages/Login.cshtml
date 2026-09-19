@@ -1,0 +1,3 @@
+@page
+@model LoginModel
+@{ViewData["Title"]="Sign in";}<div class="login"><section class="card"><div class="eyebrow">SECURE ASSET CONSOLE</div><h1>Welcome back.</h1><p>Sign in to manage your organisation's equipment.</p>@if(Model.Error is not null){<div class="error">@Model.Error</div>}<form method="post"><label>Username<input asp-for="Username" required/></label><label>Password<input asp-for="Password" type="password" required/></label><button class="primary">SIGN IN</button></form></section></div>

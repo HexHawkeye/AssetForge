@@ -1,0 +1,3 @@
+@page
+@model ReportsModel
+@{ViewData["Title"]="Reports";}<header class="page-head"><div><div class="eyebrow">PORTFOLIO</div><h1>Reports</h1><p>Financial, warranty and maintenance overview.</p></div><a class="primary button" asp-page-handler="Export">EXPORT CSV</a></header><section class="stats"><article><small>ASSET VALUE</small><strong>£@Model.AssetValue.ToString("N0")</strong><span>recorded purchase cost</span></article><article><small>WARRANTY DUE</small><strong class="orange">@Model.WarrantyDue</strong><span>within 30 days</span></article><article><small>REPAIR COST</small><strong>£@Model.RepairCost.ToString("N0")</strong><span>recorded lifetime cost</span></article></section>
